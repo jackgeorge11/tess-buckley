@@ -1,0 +1,30 @@
+<svg
+  id="Pasted_Graphic_1_Image"
+  data-name="Pasted Graphic 1 Image"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 409 108"
+>
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #36d6be;
+      }
+      .cls-2 {
+        fill: #d6d456;
+      }
+      .cls-4 {
+        fill: #d6d456;
+      }
+    </style>
+  </defs>
+  <path
+    class="cls-1"
+    d="M185.87,33.62a46.76,46.76,0,0,1-2,13.41A25.41,25.41,0,0,0,148.4,79.55a47.82,47.82,0,0,1-9.41.94,46.88,46.88,0,1,1,46.88-46.87Z"
+  />
+  <path
+    class="cls-2"
+    d="M197.07,69.29A25.42,25.42,0,0,1,148.4,79.55,46.94,46.94,0,0,0,183.92,47,25.4,25.4,0,0,1,197.07,69.29Z"
+  />
+  <circle class="cls-1" cx="243.15" cy="104.02" r="29.4" />
+  <circle class="cls-4" cx="305.36" cy="33.62" r="10.99" />
+</svg>

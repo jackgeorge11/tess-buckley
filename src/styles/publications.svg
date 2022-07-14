@@ -1,0 +1,27 @@
+<svg
+  id="Pasted_Graphic_1_Image"
+  data-name="Pasted Graphic 1 Image"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 409 108"
+>
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d6cbac;
+      }
+      .cls-3 {
+        fill: #a39a83;
+      }
+      .cls-2 {
+        fill: none;
+        stroke: #574b2b;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="123.62" width="20.97" height="108" />
+  <rect class="cls-3" x="157.01" width="10.48" height="108" />
+  <rect class="cls-1" x="354.89" width="10.48" height="108" />
+  <line class="cls-2" x1="185.87" x2="185.87" y2="108" />
+  <line class="cls-2" x1="334.7" y1="108" x2="334.7" />
+</svg>
