@@ -1,0 +1,151 @@
+@use "sass:map";
+
+body {
+  font-family: $font-family;
+  margin: 0;
+}
+
+@each $k, $v in $font-sizes {
+  #{$k} {
+    font-size: $v;
+    font-weight: $regular;
+    margin: 0;
+  }
+}
+
+.--muted {
+  opacity: 0.35;
+}
+
+@each $k, $v in $font-weights {
+  .#{$k} {
+    font-weight: $v;
+  }
+}
+
+.home {
+  display: flex;
+  // flex-direction: row-reverse;
+  height: 100vh;
+
+  .left {
+    width: 30%;
+    padding: 1rem;
+    background-color: $grey;
+    position: relative;
+    color: $black;
+
+    p {
+      position: absolute;
+      bottom: 1rem;
+    }
+  }
+
+  .right {
+    flex: 1;
+    background-color: $white;
+    @include flex($fd: column, $ai: flex-end);
+
+    .wrapper {
+      position: relative;
+      width: fit-content;
+      height: 8rem;
+      margin: 1rem 0;
+      transition: width 0s linear 0.5s, max-width 0s linear 0.5s;
+      width: 50%;
+      max-width: 0%;
+
+      h1 {
+        white-space: nowrap;
+      }
+
+      &:nth-child(odd) {
+        button#ai-ethics,
+        .flow.ai-ethics {
+          background-color: map.get($ai-ethics, "tertiary");
+        }
+        button#publications,
+        .flow.publications {
+          background-color: map.get($publications, "tertiary");
+        }
+        button#music,
+        .flow.music {
+          background-color: map.get($music, "tertiary");
+        }
+      }
+
+      &:nth-child(even) {
+        button,
+        .flow {
+          background-color: $black;
+          color: $white;
+        }
+      }
+
+      .flow {
+        content: " ";
+        width: 0;
+        transition: all 0.5s ease;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        border-radius: 0 10px 10px 0;
+      }
+
+      &:hover {
+        width: 100%;
+        max-width: 100%;
+        transition: width 0s linear 0s, max-width 0s linear 0s;
+
+        .flow {
+          width: 100%;
+        }
+
+        button {
+          transition: color 0.25s ease;
+
+          &#ai-ethics {
+            color: map.get($ai-ethics, "primary");
+          }
+          &#publications {
+            color: map.get($publications, "quinary");
+          }
+          &#music {
+            color: map.get($music, "quaternary");
+          }
+        }
+      }
+
+      button {
+        outline: none;
+        border: none;
+        border-radius: 10px 0 0 10px;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        height: 100%;
+        @include flex;
+        padding: 0 2rem;
+        transition: color 0.25s 0.15s ease;
+        background-repeat: no-repeat;
+        background-clip: padding-box;
+        background-size: cover;
+        background-position: center;
+
+        &#ai-ethics {
+          background-image: url(ai-ethics.svg);
+          color: map.get($ai-ethics, "quaternary");
+        }
+        &#publications {
+          background-image: url(publications.svg);
+          color: map.get($publications, "quaternary");
+        }
+        &#music {
+          background-image: url(music-2.svg);
+          color: map.get($music, "primary");
+        }
+      }
+    }
+  }
+}
+

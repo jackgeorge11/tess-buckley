@@ -1,14 +1,19 @@
 // FONTS
 @use "sass:map";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&family=Vollkorn:ital,wght@0,400;0,600;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&family=IBM+Plex+Sans:ital,wght@0,200;0,400;1,200;1,400&family=Vollkorn:ital,wght@0,400;0,600;1,400;1,600&display=swap");
 
-$font-family: "Roboto Condensed", sans-serif;
+$font-family: "Barlow", sans-serif;
+$vollkorn: "Vollkorn", serif;
+$ibm: "IBM Plex Sans", sans-serif;
 
-$xlg: 5rem;
-$lg: 2.5rem;
-$md: 1.5rem;
-$sm: 1rem;
-$xsm: 0.875rem;
+$xlg: 2rem;
+$lg: 1.5rem;
+$md: 1.25rem;
+$sm: 0.875rem;
+$xsm: 0.75rem;
 
 $font-sizes: (
   h1: $xlg,
@@ -18,9 +23,9 @@ $font-sizes: (
   p: $xsm,
 );
 
-$thick: 700;
+$thick: 600;
 $regular: 400;
-$thin: 300;
+$thin: 200;
 
 $font-weights: (
   thick: $thick,
@@ -31,37 +36,6 @@ $font-weights: (
 // COLORS
 
 $white: #fff;
+$white: #fffff8;
 $grey: rgb(218, 218, 218);
-$black: #000;
-
-$ai-ethics: (
-  "primary": #e2e3e5,
-  "secondary": #7e7f7f,
-  "tertiary": #a1b9ea,
-  "quaternary": #575a61,
-  "quinary": #b1b1b3,
-);
-
-$publications: (
-  "primary": #d6cbac,
-  "secondary": #575245,
-  "tertiary": #ddc06f,
-  "quaternary": #574b2b,
-  "quinary": #a39a83,
-);
-
-$music: (
-  "primary": #d64141,
-  "secondary": #8a1c1c,
-  "tertiary": #d6d456,
-  "quaternary": #2b94d6,
-  "quinary": #22628a,
-);
-
-$music: (
-  "primary": #d64141,
-  "secondary": #548a37,
-  "tertiary": #7cd64b,
-  "quaternary": #1c8a79,
-  "quinary": #36d6be,
-);
+$black: rgb(44, 44, 44);

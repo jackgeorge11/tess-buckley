@@ -1,13 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './styles/index.scss';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./styles/index.scss";
+import App from "./App";
+import EthicsOfAi from "./EthicsOfAi";
+import reportWebVitals from "./reportWebVitals";
+import Article from "./Article";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    {false ? <App /> : true ? <Article /> : <EthicsOfAi />}
   </React.StrictMode>
 );
 
